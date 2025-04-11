@@ -16,10 +16,10 @@ Realiza a criação da imagem docker com o nome especificado.
 
 Inicia o container, partindo da imagem docker com nome especificado. Deve-se substituir `{nome_da_imagem}` pelo nome do container que foi definido no passo 1.
 
-É possível utilizar as flags `-p` para mapear a aplicação para uma porta específica na sua máquina, a aplicação dentro do container expõe a porta 80 por padrão, mas isso pode ser alterado usando `-e PORTA={porta_desejada}` (substituindo o valor pela porta desejada). Deve-se substituir `{porta_local}` pela porta desejada para permitir o acesso através desta porta em específico.
+É possível utilizar as flags `-p` para mapear a aplicação para uma porta específica na sua máquina, a aplicação dentro do container expõe a porta 5500 por padrão, mas isso pode ser alterado usando `-e PORTA={porta_desejada}` (substituindo o valor pela porta desejada). Deve-se substituir `{porta_local}` pela porta desejada para permitir o acesso através desta porta em específico.
 
 Exemplo: `docker run -p 5500:5500 tarefas-back`\
-Nesse exemplo a aplicação estará acessível em: `http://localhost:3000`
+Nesse exemplo a aplicação estará acessível em: `http://localhost:5500`
 
 ## Informações importantes
 
